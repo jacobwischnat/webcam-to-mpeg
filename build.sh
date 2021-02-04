@@ -1,0 +1,12 @@
+clang \
+-L/usr/local/Cellar/ffmpeg/4.3.1_9/lib \
+-I/usr/local/Cellar/ffmpeg/4.3.1_9/include \
+src/ffmpeg.c \
+-lavcodec \
+-lavformat \
+-lavfilter \
+-lavdevice \
+-lswresample \
+-lswscale \
+-lavutil \
+-o ffmpeg
