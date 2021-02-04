@@ -98,7 +98,7 @@ int main(int argc, char** argv) {
     AVPacket* packet = av_packet_alloc();
     // size; //av_image_get_buffer_size(codecCtx->pix_fmt, codecCtx->width, codecCtx->height, 32);
 
-    for (int i = 0; i < (10 * 25); i += 1) {
+    for (int i = 0; i < (30 * 25); i += 1) {
         fflush(stdout);
 
         av_init_packet(packet);
