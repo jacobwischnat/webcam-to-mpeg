@@ -1,7 +1,10 @@
-emcc \
+clang \
 -I/usr/local/Cellar/ffmpeg/4.3.1_9/include \
-src/ffmpeg.c \
-libavcodec.a \
-libavutil.a \
-libswresample.a \
--o wasm/dist/ffmpeg.js
+-L/usr/local/Cellar/ffmpeg/4.3.1_9/lib \
+src/ffmpeg2.c \
+-lavcodec \
+-lavutil \
+-lswresample \
+-lswscale \
+-lavformat \
+-o ffmpeg
